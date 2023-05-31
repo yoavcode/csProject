@@ -11,7 +11,10 @@ namespace csProject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"]?.ToString() != "yoavAdmin" && Session["username"]?.ToString() != "member")
+            {
+                Response.Redirect("Default.aspx");
+            }
         }
     }
 }
