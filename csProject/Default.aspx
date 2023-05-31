@@ -9,7 +9,7 @@
         <h1 class="h1-learn">Learn to Code</h1>
         <h3 class="h3-learn">With the best website for developers!</h3>
         <div>
-        <a href="codingTutorial.aspx" class="tutorial cap">Click here for a tutorial</a>
+        <a href="codingTutorial.aspx" class="tutorial">Click Here For a Tutorial</a>
         </div>
         <div class="end-learn"></div>
     </div>
