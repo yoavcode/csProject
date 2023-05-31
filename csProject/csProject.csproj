@@ -93,7 +93,7 @@
     <Content Include="js\website.js" />
     <Content Include="Web.config" />
     <Content Include="login.aspx" />
-    <Content Include="home.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="signUp.aspx" />
     <Content Include="learnHtml.aspx" />
     <Content Include="learnHTMLAttributes.aspx" />
@@ -196,12 +196,12 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="home.aspx.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.aspx.designer.cs">
-      <DependentUpon>home.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="signUp.aspx.cs">
       <DependentUpon>signUp.aspx</DependentUpon>
