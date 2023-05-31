@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'csProjectYoav'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D6CF06B4E10B427CB8DCC3564E714234 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6AA7066CA42B41D78FC8E40A4206FA65 }}
           package: .
