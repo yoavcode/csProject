@@ -51,24 +51,5 @@ namespace csProject
                 return count > 0;
             }
         }
-        public bool HandleNextClick(string key1, string key2, string key3, string columnName, string redirectUrl)
-        {
-            if (IsValueExist(columnName, key1))
-            {
-                // Display error message if the value already exists
-                return true;
-            }
-            else
-            {
-                // Store value in session and redirect to the specified page
-                Session[key1] = key1;
-                Session[key2] = key2;
-                Session[key3] = key3;
-                Response.Redirect(redirectUrl);
-            }
-            return false;
-        }
     }
 }
-
-// hello GitHub!!! it is working!!!!
