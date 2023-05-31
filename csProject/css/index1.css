@@ -1,0 +1,92 @@
+﻿*, *::before, *::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+/* hide*/
+.hide {
+    display: none;
+}
+/* navigation bar */
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 24px 16px;
+    font-weight: 600;
+}
+nav {
+    background-color: #fff;
+    font-size: 19px;
+    line-height: 1.5;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: visible;
+    display: flex;
+    padding-left: 12px;
+    padding-right: 16px;
+}
+nav a:hover {
+    background-color: #04AA6D!important;
+    color: white!important
+}
+/* log in*/
+.log-in {
+    margin-left: auto;
+    padding: 24px 8px;
+}
+.log-in a {
+    background-color: #04AA6D!important;
+    border-radius: 25px;
+    color: #fff !important;
+    padding: 10px 50px;
+}
+.log-in a:hover {
+    background-color: #059862 !important;
+}
+/* sign up */
+.sign-up {
+    padding: 24px 8px;
+}
+.sign-up a {
+    background-color: #FFF4A3!important;
+    border-radius: 25px;
+    color: black!important;
+    padding: 10px 50px;
+}
+.sign-up a:hover {
+    background-color: #fff080!important;
+    color: black!important;
+}
+/* side bar */
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    background-color: #E7E9EB;
+    width: 200px;
+    height: 100%;
+    margin-top: 76.5px;
+}
+.side-bar a {
+    font-family: "Segoe UI",Arial,sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 2px 1px 1px 16px;
+    color: inherit;
+    text-transform: capitalize;
+}
+.side-bar a:hover {
+    color: #000000;
+    background-color: #cccccc;
+}
+.side-bar h2 {
+    font-size: 21px;
+    padding-left: 16px;
+    margin: 15px 0 4px 0;
+    width: 204px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

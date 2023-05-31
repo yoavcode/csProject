@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="learnCss.master.cs" Inherits="csProject.learnCss" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!-- css -->
+    <link href="css/learnCss1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+        <!--side nav bar-->
+    <div class="side-bar">
+        <h2>CSS tutorial</h2>
+        <a href="learnCss.aspx">Introduction</a>
+        <a href="learnCssSyntax.aspx">Syntax</a>
+<%--        <asp:LinkButton ID="attributes" runat="server" CssClass="users" href="#">attributes<asp:Image ID="starImage" runat="server" src="imgs/star.png" Height="17" Width="17" cssClass="star"/></asp:LinkButton>--%>
+        <a href="learnCssBackground.aspx">Backgrounds</a>
+        <a href="learnCssBorders.aspx">borders</a>
+        <a href="learnCssMargins.aspx">margins</a>
+        <a href="learnCssPadding.aspx">padding</a>
+        <a href="learnCssFonts.aspx">fonts</a>
+        <a href="learnCssText.aspx">text</a>
+        <a href="learnCssColors.aspx">Colors</a>
+        <a href="learnCssPosition.aspx" class="users">Position<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="File:Plain Yellow Star.png - Wikimedia Commons" height="17" width="17" style="transform: translateY(20%);" class="starImage"/></a>
+        <a href="learnCssOverFlow.aspx" class="users">overflow<img class="starImage" src="imgs/star.png" height="17" width="17" style="transform: translateY(20%);"/></a>
+        <a href="learnCssFloat.aspx" class="users">float<img class="starImage" src="imgs/star.png" height="17" width="17" style="transform: translateY(20%);"/></a>
+        <br>
+        <h2>CSS Advanced</h2>
+        <a href="learnCss3D.aspx">3D Transforms</a>
+        <a href="learnCssAnimations.aspx">animations</a>
+        <a href="learnCssTextEffects.aspx">text effects</a>
+        <h2>CSS Quiz</h2>
+        <a href="CssQuiz.aspx">quiz</a>
+    </div>
+        <!--content-->
+    <div class="contact">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

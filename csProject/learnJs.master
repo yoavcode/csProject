@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="learnJs.master.cs" Inherits="csProject.NestedMasterPage1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <!-- css -->
+    <link href="css/learnCss1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+            <!--side nav bar-->
+    <div class="side-bar">
+        <h2>JS tutorial</h2>
+        <a href="learnJs.aspx">Introduction</a>
+        <a href="learnJsSyntax.aspx">Syntax</a>
+<%--        <asp:LinkButton ID="attributes" runat="server" CssClass="users" href="#">attributes<asp:Image ID="starImage" runat="server" src="imgs/star.png" Height="17" Width="17" cssClass="star"/></asp:LinkButton>--%>
+        <a href="learnJsVariables.aspx">Variables</a>
+        <a href="learnJsFunctions.aspx">functions</a>
+        <a href="learnJsDataTypes.aspx">data types</a>
+        <a href="learnJsEvents.aspx">Events</a>
+        <a href="learnJsMath.aspx">math</a>
+        <a href="learnJsComparisons.aspx">comparisons</a>
+        <a href="learnJsArrays.aspx">arrays</a>
+        <a href="learnJsScope.aspx" class="users">scope<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="File:Plain Yellow Star.png - Wikimedia Commons" height="17" width="17" style="transform: translateY(20%);" class="starImage"/></a>
+        <a href="learnJsMaps.aspx" class="users">maps<img class="starImage" src="imgs/star.png" height="17" width="17" style="transform: translateY(20%);"/></a>
+        <a href="learnJsJson.aspx" class="users">JSON<img class="starImage" src="imgs/star.png" height="17" width="17" style="transform: translateY(20%);"/></a>
+        <br>
+        <h2>JS Classes</h2>
+        <a href="learnJsClasses.aspx">classes</a>
+        <a href="learnJsObjects.aspx">objects</a>
+        <a href="learnJsSetters.aspx">getters and setters</a>
+        <a href="learnJsHoisting.aspx">hoisting</a>
+        <h2>JS project</h2>
+        <a href="learnJsProject.aspx">project</a>
+        <h2>JS Quiz</h2>
+        <a href="JsQuiz.aspx">quiz</a>
+    </div>
+        <!--content-->
+    <div class="contact">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

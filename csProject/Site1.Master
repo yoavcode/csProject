@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="csProject.Site1" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script>
+            history.pushState(null, null, location.href);
+            window.onpopstate = function (event) {
+                history.go(1);
+            };
+    </script>
+    <title>Website</title>
+    <!-- highlight -->
+<%--    <link href="highlight/prism%20.css" rel="stylesheet" />--%>
+    <link href="highlight/prism.css" rel="stylesheet" />
+ <%--   <script src="highlight/prism%20(1).js"></script>--%>
+    <script src="highlight/prism%20(4).js"></script>
+    <!--javaScript-->
+    <script defer src="js/website.js"></script>
+    <script defer src="js/forms.js"></script>
+    <!-- login css -->
+    <link href="css/login.css" rel="stylesheet" />
+    <!-- login fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Jost:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--css-->
+    <link href="css/index1.css" rel="stylesheet" />
+    <link href="css/home1.css" rel="stylesheet" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Jost:wght@400;500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Jost:wght@400;500&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- favicon-->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/fluency/32/code.png">
+    <!-- awesome fonts link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server" id="form1">
+    <nav>
+        <a href="#" style="background-color: white !important; color: black !important;"><i class="fa fa-solid fa-code"></i></a>
+        <a href="home.aspx">Home</a>
+        <a href="about.aspx">About</a>
+<%--        <a href="#">Contact</a>--%>
+        <asp:LinkButton ID="admin" runat="server" href="admin.aspx" Visible="false">Admin</asp:LinkButton>
+        <div class="log-in">
+<%--            <asp:HyperLink ID="hyperlogin" href="login.aspx" runat="server" Visible="True">Log in</asp:HyperLink>
+            <asp:HyperLink ID="hyperusername" href="#" runat="server" Visible="False"></asp:HyperLink>--%>
+<%--            <a href="login.aspx" id="loginBtn">Log in</a>--%>
+            <asp:LinkButton ID="LoginBtn" runat="server" href="login.aspx">Log in</asp:LinkButton>
+        </div>
+        <div class="sign-up">
+<%--            <asp:hyperlink id="hypersignup" href="signup.aspx" runat="server" Visible="false">sign up</asp:hyperlink>
+            <asp:LinkButton ID="Hyperlogout" runat="server" Visible="false" OnClick="Hyperlogout_Click">Log out</asp:LinkButton>--%>
+<%--            <asp:HyperLink ID="Hyperlogout" href="#" runat="server" Visible="False">Log out</asp:HyperLink>--%>
+<%--            <a href="signUp.aspx">Sign up</a>--%>
+                <asp:LinkButton ID="signupBtn" runat="server" href="signUp1.aspx" OnClick="signupBtn_Click">Sign up</asp:LinkButton>
+        </div>
+    </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+            <script>
+                let links = document.querySelectorAll(".users");
+                let images = document.querySelectorAll(".starImage");
+                if ('<%=Session["role"] %>' == 'member') {
+                    images.forEach(image => image.classList.add("hide"));
+                    links.forEach(link => link.classList.remove("users"));
+                } else {
+                    links.forEach(link => link.href = "#");
+                };
+            </script>
+</body>
+</html>
