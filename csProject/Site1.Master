@@ -45,7 +45,7 @@
     <form runat="server" id="form1">
     <nav>
         <a href="#" style="background-color: white !important; color: black !important;"><i class="fa fa-solid fa-code"></i></a>
-        <a href="home.aspx">Home</a>
+        <a href="Default.aspx">Home</a>
         <a href="about.aspx">About</a>
 <%--        <a href="#">Contact</a>--%>
         <asp:LinkButton ID="admin" runat="server" href="admin.aspx" Visible="false">Admin</asp:LinkButton>
