@@ -34,7 +34,7 @@ namespace csProject
                 // Set session variables and redirect to the home page if username and password match
                 Session["username"] = username;
                 Session["role"] = "member";
-                Response.Redirect("home.aspx");
+                Response.Redirect("Default.aspx");
             }
             else
             {

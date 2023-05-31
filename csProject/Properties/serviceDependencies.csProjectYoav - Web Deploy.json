@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/csprojectdbserver/databases/csProject_db",
+      "type": "mssql.azure",
+      "connectionId": "websiteDB"
+    }
+  }
+}
