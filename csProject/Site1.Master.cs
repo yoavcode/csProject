@@ -34,7 +34,7 @@ namespace csProject
             LoginBtn.Attributes["href"] = "login.aspx";
             signupBtn.Attributes["href"] = "signUp.aspx";
             Session["username"] = Session["role"] = null;
-            Response.Redirect("home.aspx");
+            Response.Redirect("Default.aspx");
         }
         public bool IsValueExist(string columnName, string value)
         {

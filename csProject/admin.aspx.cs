@@ -18,7 +18,7 @@ namespace csProject
             // Redirect to home.aspx if the username in the session is not "yoavAdmin"
             if (Session["username"]?.ToString() != "yoavAdmin")
             {
-                Response.Redirect("home.aspx");
+                Response.Redirect("Default.aspx");
             }
         }
 
